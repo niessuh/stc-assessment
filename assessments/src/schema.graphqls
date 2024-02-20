@@ -1,0 +1,20 @@
+type Query {
+    getFileMetadata(fileId: ID!): FileMetadata
+}
+
+type FileMetadata {
+    id: ID!
+    name: String!
+    folder: FolderMetadata!
+}
+
+type FolderMetadata {
+    id: ID!
+    name: String!
+    space: SpaceMetadata!
+}
+
+type SpaceMetadata {
+    id: ID!
+    name: String!
+}
