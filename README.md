@@ -1,1 +1,2 @@
 # stc-assessment
+Security layer was not implemented in the system design because it was not mentioned in the assignment. However, I planned to implement this layer using Spring Security Starter and JWT. I intended to connect the permissions table as roles for the logging user and use these roles to check authorization using PreAuthorize. Instead, I devised a custom coding workaround to verify this authority.
